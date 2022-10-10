@@ -42,4 +42,18 @@ for(let i = 1; i <= 100; i++) {
     }
 }
 
+const squareHover = document.querySelector('.square');
+
+const changeOpacity = function() {
+    squareHover.classList.add("hover");
+    console.log(changeOpacity);
+}
+
+squareHover.addEventListener('onmouseover', changeOpacity);
+
+
+
+
+
+
 
