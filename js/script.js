@@ -10,7 +10,13 @@
 
 for(let i = 1; i <= 100; i++) {
     if ((i % 5) == 0 && (i % 3) == 0){
-        console.log("FizzBuzz");  
+        // console.log("FizzBuzz");
+        const squareFizzBuzz = document.createElement('div');
+        squareFizzBuzz.className = "square";
+        const wrapper = document.querySelector(".wrapper");
+        wrapper.append(squareFizzBuzz);
+        squareFizzBuzz.append("FizzBuzz");
+        console.log(squareFizzBuzz);
     }
 
    else if ((i % 3) == 0) {
