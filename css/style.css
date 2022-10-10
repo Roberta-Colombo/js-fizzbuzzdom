@@ -6,6 +6,14 @@
 
 .square {
     height: 80px;
-    width: 80px;
+    width: 10%;
     border: 1px solid black;
 }
+
+.grid {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+}
+

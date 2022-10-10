@@ -7,13 +7,13 @@
     - solo multipli di 3 (Fizz);
     - solo multipli di 5 (Buzz); */
 
-const wrapper = document.querySelector(".wrapper");
+const grid = document.querySelector(".grid");
 
 for(let i = 1; i <= 100; i++) {
     if ((i % 5) == 0 && (i % 3) == 0){
         const squareFizzBuzz = document.createElement('div');
         squareFizzBuzz.className = "square";
-        wrapper.append(squareFizzBuzz);
+        grid.append(squareFizzBuzz);
         squareFizzBuzz.append("FizzBuzz");
         console.log(squareFizzBuzz);
     }
@@ -21,7 +21,7 @@ for(let i = 1; i <= 100; i++) {
    else if ((i % 3) == 0) {
         const squareFizz = document.createElement('div');
         squareFizz.className = "square";
-        wrapper.append(squareFizz);
+        grid.append(squareFizz);
         squareFizz.append("Fizz");
         console.log(squareFizz);
     }    
@@ -29,12 +29,17 @@ for(let i = 1; i <= 100; i++) {
     else if ((i % 5) == 0){
         const squareBuzz = document.createElement('div');
         squareBuzz.className = "square";
-        wrapper.append(squareBuzz);
+        grid.append(squareBuzz);
         squareBuzz.append("Buzz");
-        console.log("Buzz");
+        console.log(squareBuzz);
     }     
-    else 
-        console.log(i);
+    else {
+        const squareNumber = document.createElement('div');
+        squareNumber.className = "square";
+        grid.append(squareNumber); 
+        squareNumber.append(i);
+        console.log(squareNumber);
+    }
 }
 
 
