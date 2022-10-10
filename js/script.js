@@ -45,7 +45,7 @@ for(let i = 1; i <= 100; i++) {
 const squareHover = document.querySelector('.square');
 
 const changeOpacity = function() {
-    squareHover.classList.add("hover");
+    squareHover.classList.add(".square:hover");
     console.log(changeOpacity);
 }
 
