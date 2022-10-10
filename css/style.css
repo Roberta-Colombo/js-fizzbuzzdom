@@ -7,13 +7,36 @@
 .square {
     height: 80px;
     width: 10%;
-    border: 1px solid black;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 80px;
+    background-color: #f7cac9;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 .grid {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 80%;
     display: flex;
     flex-flow: row wrap;
+}
+
+.fizzbuzz {
+    background-color: #034f84;
+    color: white;
+}
+
+.fizz {
+    background-color: #92a8d1;
+}
+
+.buzz {
+    background-color: #f7786b;
+    color: white;
+}
+
+.number {
+    background-color: #f7cac9; 
 }
 
