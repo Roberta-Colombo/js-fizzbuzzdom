@@ -7,23 +7,30 @@
     - solo multipli di 3 (Fizz);
     - solo multipli di 5 (Buzz); */
 
+const wrapper = document.querySelector(".wrapper");
 
 for(let i = 1; i <= 100; i++) {
     if ((i % 5) == 0 && (i % 3) == 0){
-        // console.log("FizzBuzz");
         const squareFizzBuzz = document.createElement('div');
         squareFizzBuzz.className = "square";
-        const wrapper = document.querySelector(".wrapper");
         wrapper.append(squareFizzBuzz);
         squareFizzBuzz.append("FizzBuzz");
         console.log(squareFizzBuzz);
     }
 
    else if ((i % 3) == 0) {
-        console.log("Fizz");
+        const squareFizz = document.createElement('div');
+        squareFizz.className = "square";
+        wrapper.append(squareFizz);
+        squareFizz.append("Fizz");
+        console.log(squareFizz);
     }    
 
     else if ((i % 5) == 0){
+        const squareBuzz = document.createElement('div');
+        squareBuzz.className = "square";
+        wrapper.append(squareBuzz);
+        squareBuzz.append("Buzz");
         console.log("Buzz");
     }     
     else 
